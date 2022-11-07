@@ -1,0 +1,36 @@
+{
+  "name": "seolcat-server",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "cross-env NODE_ENV=production PORT=1029 pm2 start index.js"
+  },
+  "author": "jjg",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1231.0",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "helmet": "^3.21.2",
+    "hpp": "^0.2.3",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "mysql2": "^1.6.5",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pm2": "^5.2.0",
+    "sequelize": "^5.8.6",
+    "sequelize-cli": "^5.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

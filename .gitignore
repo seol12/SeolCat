@@ -1,0 +1,14 @@
+
+.env
+
+Seolecat.pem
+
+/src/client/.next
+
+/src/client/node_modules
+
+/src/server/uploads
+
+/src/server/migrations
+
+/src/server/node_modules
