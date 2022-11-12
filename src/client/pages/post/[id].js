@@ -40,7 +40,7 @@ const Post = () => {
               }
             </>
 
-          : <PageResultNotFound guide={'앗! 찾으시는 게시글이 없습니다'} />
+          : <PageResultNotFound guide={'앗! 찾으시는 게시글이 없습니다.'} />
         }
       </Layout>
     </>
