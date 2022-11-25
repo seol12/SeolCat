@@ -100,7 +100,7 @@ const Menubar = ({ mode, animation, closeAction }) => {
             <div className='routerItemContainer'>
               <S.RouterItem>
                 <img src='/menu_bar_move_home.svg' alt='menu_bar_move_home.svg' />
-                <p onClick={movePage(`/`, 'home')}>홈</p>
+                <p onClick={movePage(`/`, 'home')}>메인</p>
               </S.RouterItem>
             </div>
             <div className='routerItemContainer'>
@@ -175,7 +175,7 @@ const Menubar = ({ mode, animation, closeAction }) => {
               <div className='routerItemContainer'>
                 <S.RouterItem>
                   <img src='/menu_bar_move_home.svg' alt='menu_bar_move_home' />
-                    <p onClick={movePage(`/`, 'home')}>홈</p>
+                    <p onClick={movePage(`/`, 'home')}>메인</p>
                 </S.RouterItem>
               </div>
               <div className='routerItemContainer'>
