@@ -21,9 +21,9 @@ const UserProfile = () => {
   const [isSelectedUserPosts, setIsSelectedUserPosts] = useState(true);
   const pageInformation = { 
     title: userInformation ? `${userInformation.nickname} 님의 프로필 - 설캣` : '설캣', 
-    description: userInformation ? `${userInformation?.nickname} 님의 작성하신 게시글들 또는 마음에 들어하는 게시글들을 구경해보세요!`  : '최고 또는 최악의 플레이를 설캣에서 박제해 보세요!',
+    description: userInformation ? `${userInformation?.nickname} 님이 작성한 게시글과 좋아하는 게시글을 구경해 보세요!` : '지금 무슨 생각을 하고 계신가요? 오늘의 하루를 설캣에서 공유해 보세요!',
     ogTitle: userInformation ? `${userInformation?.nickname} 님의 프로필 - 설캣`  : '설캣',
-    ogDescription: userInformation ? `${userInformation?.nickname} 님의 작성하신 게시글들 또는 마음에 들어하는 게시글들을 구경해보세요!`  : '최고 또는 최악의 플레이를 설캣에서 박제해 보세요!',
+    ogDescription: userInformation ? `${userInformation?.nickname} 님이 작성한 게시글과 좋아하는 게시글을 구경해 보세요!` : '지금 무슨 생각을 하고 계신가요? 오늘의 하루를 설캣에서 공유해 보세요!',
     ogUrl: `http://www.seolcat.com/userprofile/${nickname}`,
     ogImage: userInformation?.profileBackground  ? userInformation.profileBackground : null,
   };
