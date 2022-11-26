@@ -2,7 +2,7 @@ import React from "react";
 import Head from 'next/head';
 
 
-const SEO = ({ title, description, ogTitle, ogUrl, ogImage, ogDescription }) => {
+const SEO = ({ title, description, ogTitle, ogDescription, ogUrl, ogImage }) => {
 
   return (
     <>
@@ -13,9 +13,9 @@ const SEO = ({ title, description, ogTitle, ogUrl, ogImage, ogDescription }) => 
         <meta name="title" key="title" content={`${title}`} />
         <meta name="description" key="description" content={`${description}`} />
         <meta property="og:title" key="ogTitle" content={`${ogTitle}`} />
+        <meta property="og:description" key="ogDescription" content={`${ogDescription}`} />
         <meta property="og:url" key="ogUrl" content={`${ogUrl}`} />
         <meta property="og:image" key="ogImage" content={`${ogImage || 'http://www.seolcat.com/default_og_image.png'}`} />
-        <meta property="og:description" key="ogDescription" content={`${ogDescription}`} />
       </Head>
     </>
   );
