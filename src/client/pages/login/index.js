@@ -18,9 +18,9 @@ const Login = () => {
   const [password, onChangePassword, checkPassword, passwordErrorReason, setPasswordErrorReason] = useValidation('', '비밀번호', 'login');
   const pageInformation = {
     title: '로그인 - 설캣',
-    description: '설캣에 회원가입 또는 로그인을 하여 최고의 플레이를 자랑 또는 최악의 플레이를 박제해 보세요!',
+    description: '설캣에 회원가입 또는 로그인을 하여 오늘의 하루를 공유해 보세요!',
     ogTitle: '로그인 - 설캣',
-    ogDescription: '최고 또는 최악의 플레이를 설캣에서 박제해 보세요!',
+    ogDescription: '설캣에 회원가입 또는 로그인을 하여 오늘의 하루를 공유해 보세요!',
     ogUrl: 'http://www.seolcat.com',
     ogImage: null,
   };
