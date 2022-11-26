@@ -17,9 +17,9 @@ const Search = () => {
   const { keyword } = router.query;
   const pageInformation = {
     title: `'${keyword}'에 대한 검색 결과 - 설캣`,
-    description: '최고 또는 최악의 플레이를 설캣에서 박제해 보세요!',
+    description: '지금 무슨 생각을 하고 계신가요? 오늘의 하루를 설캣에서 공유해 보세요!',
     ogTitle: '설캣',
-    ogDescription: '최고 또는 최악의 플레이를 설캣에서 박제해 보세요!',
+    ogDescription: '지금 무슨 생각을 하고 계신가요? 오늘의 하루를 설캣에서 공유해 보세요!',
     ogUrl: `http://www.seolcat.com/search/${keyword}`,
     ogImage: null,
   };
