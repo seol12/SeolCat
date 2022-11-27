@@ -6,6 +6,9 @@ export const SliderItemsContainer = styled.div`
   position: relative;
   width: 70%;
   overflow: hidden;
+  height: ${(props) => {
+    return props.isFirstImageLoading ? '0' : 'auto'
+  }};
 
 `;
 
