@@ -18,6 +18,7 @@ export const BigSizeSpinner = styled.div`
   position: absolute;
   left: calc(54% - 42px);
   top: calc(54% - 42px);
+  z-index: 2;
   width: 42px;
   height: 42px;
   border: 4px solid #FFFFFF;
@@ -34,6 +35,7 @@ export const SmallSizeSpinner = styled.div`
   position: absolute;
   left: calc(54% - 38px);
   top: calc(54% - 38px);
+  z-index: 2;
   width: 38px;
   height: 38px;
   border: 4px solid #FFFFFF;
