@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import * as S from './style';
 import Image from 'next/image';
 import LoadingSpinner from '../LoadingSpinner';
@@ -7,12 +7,17 @@ import Slider from '../Slider';
 
 const PostImages = ({ images }) => {
 
+  const isMountedRef = useRef(false); 
   const [isImageLoading, setImageLoading] = useState(true);
 
 
   useEffect(() => {
 
-    setImageLoading(false);
+    if(!isMountedRef.current) {
+      isMountedRef.current = true;
+    }else {
+      setImageLoading(true);
+    }
 
   }, [images]);
   
