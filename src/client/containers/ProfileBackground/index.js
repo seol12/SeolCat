@@ -1,8 +1,9 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import * as S from './style';
 import { useDispatch, useSelector } from 'react-redux';
 import { CHANGE_BACKGROUND_REQUEST } from '../../actions/userActions';
 import Image from 'next/image';
+import LoadingSpinner from '../../components/LoadingSpinner';
 
 
 const ProfileBackground = ({ isTotalUpdating }) => {
@@ -11,8 +12,15 @@ const ProfileBackground = ({ isTotalUpdating }) => {
   const myId = useSelector(state => state.user.myInformation?.id);
   const { userInformation } = useSelector(state => state.user);
   const uploadRef = useRef(null);
+  const [isImageLoading, setImageLoading] = useState(true);
   const [inputRerender, setInputRerender] = useState(false);
   
+
+  useEffect(() => {
+    
+    setImageLoading(true);
+
+  }, [userInformation.profileBackground]);
 
   const inputClick = () => {
 
@@ -54,7 +62,12 @@ const ProfileBackground = ({ isTotalUpdating }) => {
         ? <S.ProfileBackgroundMainContainer>
             <S.BackgroundWrapper isUpdating={isTotalUpdating}>
               <S.Background>
-                <Image layout='fill' src={userInformation.profileBackground} alt={userInformation.profileBackground} />
+                {isImageLoading &&
+                  <LoadingSpinner size={'big'} />
+                }
+                <Image layout='fill' src={userInformation.profileBackground} alt={userInformation.profileBackground} 
+                  onLoadingComplete={() => {setImageLoading(false)}}
+                />
               </S.Background>
             </S.BackgroundWrapper>
             {isTotalUpdating && userInformation.id === myId &&
