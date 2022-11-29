@@ -12,6 +12,7 @@ export const ProfileBackgroundMainContainer = styled.div`
 export const BackgroundWrapper = styled.div`
 
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
   background-color: #808080;
@@ -21,11 +22,22 @@ export const BackgroundWrapper = styled.div`
 
 `;
 
-export const Background = styled.div`
+export const SkeletonBackground = styled.div`
 
   position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+
+`;
+
+export const Background = styled.div`
+
+  position: relative;
+  width: 100%;
+  height: ${(props) => {
+    return props.isImageLoading ? '0%' : '100%'
+  }};
 
   & img {
     width: 100%;

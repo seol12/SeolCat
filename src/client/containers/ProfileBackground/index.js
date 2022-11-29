@@ -61,10 +61,12 @@ const ProfileBackground = ({ isTotalUpdating }) => {
       {userInformation && userInformation.profileBackground
         ? <S.ProfileBackgroundMainContainer>
             <S.BackgroundWrapper isUpdating={isTotalUpdating}>
-              <S.Background>
-                {isImageLoading &&
+              {isImageLoading &&
+                <S.SkeletonBackground>
                   <LoadingSpinner size={'big'} />
-                }
+                </S.SkeletonBackground>
+              }
+              <S.Background isImageLoading={isImageLoading}>
                 <Image layout='fill' src={userInformation.profileBackground} alt={userInformation.profileBackground} 
                   onLoadingComplete={() => {setImageLoading(false)}}
                 />
