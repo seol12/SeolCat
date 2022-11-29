@@ -18,7 +18,9 @@ export const PostImage = styled.div`
   width: 70%;
   background-color: #808080;
   margin-bottom: 10px;
-  padding-bottom: 40%;
+  padding-bottom: ${(props) => {
+    return props.isImageLoading ? '0%' : '40%'
+  }};
   object-fit: cover;
 
   & img {
@@ -29,10 +31,11 @@ export const PostImage = styled.div`
 
 `;
 
-export const TemporaryImage  = styled.div`
+export const SkeletonImage  = styled.div`
 
   position: relative;
   width: 70%;
+  overflow: hidden;
   background-color: #808080;
   padding-bottom: 40%;
 

@@ -35,10 +35,12 @@ const PostImages = ({ images }) => {
     return (
       <>
         <S.PostImagesMainContainer>
-          <S.PostImage>
-            {isImageLoading &&
+          {isImageLoading &&
+            <S.SkeletonImage>
               <LoadingSpinner size={'normal'} />
-            }
+            </S.SkeletonImage>
+          }
+          <S.PostImage isImageLoading={isImageLoading}>
             <Image layout='fill' src={images[0].src} alt={images[0].src} 
               onLoadingComplete={() => {setImageLoading(false)}}
             />
@@ -51,9 +53,9 @@ const PostImages = ({ images }) => {
       <>
         <S.PostImagesMainContainer>
           {isImageLoading &&
-            <S.TemporaryImage>
+            <S.SkeletonImage>
               <LoadingSpinner size={'normal'} />
-            </S.TemporaryImage>
+            </S.SkeletonImage>
           }
           <Slider images={images} isFirstImageLoading={isImageLoading} firstImageLoadingComplete={firstImageLoadingComplete} />
         </S.PostImagesMainContainer>
