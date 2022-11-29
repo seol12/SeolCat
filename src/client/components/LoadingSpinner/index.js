@@ -7,12 +7,14 @@ const LoadingSpinner = ({ size }) => {
     return (
       <>
         <S.BigSizeSpinner />
+        <S.ShineGradient />
       </>
     );
   }else {
     return (
       <>
         <S.SmallSizeSpinner />
+        <S.ShineGradient />
       </>
     );
   }
