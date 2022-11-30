@@ -74,7 +74,7 @@ const ProfileBackground = ({ isTotalUpdating }) => {
             </S.BackgroundWrapper>
             {isTotalUpdating && userInformation.id === myId &&
               <S.Actions>
-                <input type="file" accept="image/*" hidden key={inputRerender} ref={uploadRef} onChange={chnageProfileBackground} />
+                <input type='file' accept='image/*' hidden key={inputRerender} ref={uploadRef} onChange={chnageProfileBackground} />
                   <div className='change'>
                     <button type='button' aria-label='profileBackgroundChangeButton' onClick={inputClick}>
                       <img src='/profile_info_change_button.svg' alt='profile_info_change_button.svg' />
@@ -93,7 +93,7 @@ const ProfileBackground = ({ isTotalUpdating }) => {
             <S.DefaultBackground />
             {isTotalUpdating && userInformation.id === myId &&
               <S.Actions>
-                <input type="file" accept="image/*" hidden key={inputRerender} ref={uploadRef} onChange={chnageProfileBackground} />
+                <input type='file' accept='image/*' hidden key={inputRerender} ref={uploadRef} onChange={chnageProfileBackground} />
                   <div className='change'>
                     <button type='button' aria-label='profileBackgroundUploadButton' onClick={inputClick}>
                       <img src='/profile_info_change_button.svg' alt='profile_info_change_button.svg' />
