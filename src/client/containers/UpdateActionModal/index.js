@@ -78,13 +78,13 @@ const UpdateActionModal = memo(({ post, closeAction }) => {
     <>
       <S.ModalBackground ref={backgroundRef} onClick={handleClickBackground}>
         <S.UpdateModalMainContainer>
-          <form type="hidden" encType='multipart/form-data' onSubmit={updatePost}>
+          <form type='hidden' encType='multipart/form-data' onSubmit={updatePost}>
             <S.Header>
               <div className='guide'>
                 <p>게시글 수정</p>
               </div>
               <div className='exitButtonWrapper'>
-                <button aria-label='updateModalOffButton' type="button" onClick={closeAction}>
+                <button aria-label='updateModalOffButton' type='button' onClick={closeAction}>
                   <img src='/modal_exit_button.svg' alt='modal_exit_button.svg' />
                 </button>
               </div>
@@ -98,7 +98,7 @@ const UpdateActionModal = memo(({ post, closeAction }) => {
                 <div className='line'/>
                 <S.Actions>
                   <div className='upload'>
-                    <input type="file" accept="image/*" multiple hidden key={inputRerender} ref={inputRef} onChange={uploadImages} />
+                    <input type='file' accept='image/*' multiple hidden key={inputRerender} ref={inputRef} onChange={uploadImages} />
                     <img src='/image_upload_button.svg' onClick={inputClick} alt='image_upload_button.svg' />
                   </div>
                   <S.ButtonsContainer>
@@ -116,7 +116,7 @@ const UpdateActionModal = memo(({ post, closeAction }) => {
               <S.PreviewImagesContainer>
                 {updatePostImageList.map((v, i) => {
                   return (
-                    <S.PreviewImage key={v}>
+                    <S.PreviewImage key={`updateImageSrc/${v}`}>
                       <img src={v} alt={v} />
                       <div className='removeButtonWrapper'>
                         <button type='button' aria-label={`removeImageButton/${i}`} onClick={removePreviewImage(i)}>X</button>
