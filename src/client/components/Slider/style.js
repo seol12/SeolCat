@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 
 export const SliderItemsContainer = styled.div`
@@ -65,7 +65,6 @@ export const ImagesContainer = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  transition: margin-left 0.5s ease-in-out;
  
 `;
 
