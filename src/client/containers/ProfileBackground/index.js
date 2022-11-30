@@ -11,6 +11,7 @@ const ProfileBackground = ({ isTotalUpdating }) => {
   const dispatch = useDispatch();
   const myId = useSelector(state => state.user.myInformation?.id);
   const { userInformation } = useSelector(state => state.user);
+  const isMountedRef = useRef(null);
   const uploadRef = useRef(null);
   const [isImageLoading, setImageLoading] = useState(true);
   const [inputRerender, setInputRerender] = useState(false);
@@ -18,7 +19,11 @@ const ProfileBackground = ({ isTotalUpdating }) => {
 
   useEffect(() => {
     
-    setImageLoading(true);
+    if(!isMountedRef.current) {
+      isMountedRef.current = true;
+    }else {
+      setImageLoading(true);
+    }
 
   }, [userInformation.profileBackground]);
 
