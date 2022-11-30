@@ -82,9 +82,9 @@ const Slider = ({ images, isFirstImageLoading, firstImageLoadingComplete }) => {
         <S.ImagesContainer ref={imagesContainerRef}>
           {images.map((v, i) => {
             return (
-              <S.ImageWrapper key={v.id}>
+              <S.ImageWrapper key={`imageWrapper/imageId/${v.id}/imageIndex/${i}`}>
                 <S.ImageItem>
-                  <Image layout="fill" key={v.id} src={images[i].src} alt={images[i].src} 
+                  <Image layout="fill" key={`imageId/${v.id}/imageIndex/${i}/isFirstImageLoading/${isFirstImageLoading}`} src={images[i].src} alt={images[i].src} 
                     onLoadingComplete={firstImageLoadingComplete(i)}
                   />
                 </S.ImageItem>
