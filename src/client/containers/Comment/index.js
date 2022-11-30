@@ -28,7 +28,7 @@ const Comment = memo(({ postId, comment }) => {
   const [commentUpdate, commentUpdateOnOff] = usePrevStateChanged(false);
   const [utilMenu, utilMenuOnOff, utilMenuAnimation, utilMenuOff] = useHandleClickOutside(false, utilMenuRef, false);
   const utilMenuProps = {
-    parentComponentType: 'Comment',
+    parentComponentType: 'comment',
     removeModalOn: removeModalOnOff,
     updateModalOn: commentUpdateOnOff,
     closeAction: utilMenuOff,
