@@ -40,7 +40,7 @@ const CommentForm = ({ postId }) => {
             </S.AvatarWrapper>
             <S.Input placeholder='댓글을 남겨 보세요.' value={commentContent} onChange={onChangeCommentContent} />
               <S.Action>
-                <button aria-label='submitButton' type="submit">
+                <button aria-label='submitButton' type='submit'>
                   <p>보내기</p>
                 </button>
               </S.Action>
