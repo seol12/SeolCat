@@ -77,7 +77,7 @@ const ProfilePosts = ({ isSelectedUserPosts, pathVariable }) => {
           ? <>
               {userPosts.map((v) => {
                 return (
-                  <PostFrame key={`userPosts/${v.id}`} post={v} />
+                  <PostFrame key={`userPosts/postId/${v.id}`} post={v} />
                 )})
               }
               <Observer ref={setTarget} />
@@ -98,7 +98,7 @@ const ProfilePosts = ({ isSelectedUserPosts, pathVariable }) => {
           ? <>
               {userLikedPosts.map((v) => {
                 return (
-                  <PostFrame key={`userLikedPosts/${v.id}`} post={v} />
+                  <PostFrame key={`userLikedPosts/postId/${v.id}`} post={v} />
                 )})
               }
               <Observer ref={setTarget} />
