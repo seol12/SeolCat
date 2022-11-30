@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { PageResultNotFoundMainContainer } from './style';
 
 
@@ -7,7 +7,7 @@ const PageResultNotFound = ({ guide }) => {
   return (
     <>
       <PageResultNotFoundMainContainer>
-        <div className="guide">
+        <div className='guide'>
           <p>{guide}</p>
         </div>
       </PageResultNotFoundMainContainer>
