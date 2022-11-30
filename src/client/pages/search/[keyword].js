@@ -1,14 +1,14 @@
-import React from "react";
-import wrapper from "../../store/configStore";
-import axios from "axios";
-import { END } from "redux-saga";
-import { useRouter } from "next/router";
-import { LOAD_MY_INFORMATION_REQUEST } from "../../actions/userActions";
-import { LOAD_SEARCH_POSTS_REQUEST, SELECT_POSTS } from "../../actions/postActions";
-import SEO from "../../components/SEO";
+import React from 'react';
+import wrapper from '../../store/configStore';
+import axios from 'axios';
+import { END } from 'redux-saga';
+import { useRouter } from 'next/router';
+import { LOAD_MY_INFORMATION_REQUEST } from '../../actions/userActions';
+import { LOAD_SEARCH_POSTS_REQUEST, SELECT_POSTS } from '../../actions/postActions';
+import SEO from '../../components/SEO';
 import Layout from '../../components/Layout'
-import SearchResult from "../../components/SearchResult";
-import SearchPosts from "../../containers/SearchPosts";
+import SearchResult from '../../components/SearchResult';
+import SearchPosts from '../../containers/SearchPosts';
 
 
 const Search = () => {
