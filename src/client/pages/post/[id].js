@@ -1,15 +1,15 @@
-import React from "react";
-import wrapper from "../../store/configStore";
-import axios from "axios";
-import { END } from "redux-saga";
-import { useRouter } from "next/router";
-import { useSelector } from "react-redux";
-import { LOAD_MY_INFORMATION_REQUEST } from "../../actions/userActions";
-import { LOAD_POST_REQUEST, SELECT_POSTS } from "../../actions/postActions";
-import SEO from "../../components/SEO";
+import React from 'react';
+import wrapper from '../../store/configStore';
+import axios from 'axios';
+import { END } from 'redux-saga';
+import { useRouter } from 'next/router';
+import { useSelector } from 'react-redux';
+import { LOAD_MY_INFORMATION_REQUEST } from '../../actions/userActions';
+import { LOAD_POST_REQUEST, SELECT_POSTS } from '../../actions/postActions';
+import SEO from '../../components/SEO';
 import Layout from '../../components/Layout'
 import PostFrame from '../../containers/PostFrame'
-import PageResultNotFound from "../../components/PageResultNotFound";
+import PageResultNotFound from '../../components/PageResultNotFound';
 
 
 const Post = () => {
@@ -35,7 +35,7 @@ const Post = () => {
           ? <>
               {userSinglePost.map((v) => {
                 return (
-                  <PostFrame key={`userSinglePost/${v.id}`} post={v} />
+                  <PostFrame key={`userSinglePost/postId/${v.id}`} post={v} />
                 )})
               }
             </>
