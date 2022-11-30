@@ -34,7 +34,7 @@ const UtilMenu = forwardRef(({ parentComponentType, postId, author, removeModalO
   };
 
 
-  if(parentComponentType === 'Post') {
+  if(parentComponentType === 'post') {
     return (
       <>
         <S.PostUtilMenuMainContainer ref={toggleRef} animation={animation}>
