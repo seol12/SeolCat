@@ -19,7 +19,7 @@ const CommentList = ({ postId, comments, animation, parentMaxHeight }) => {
           }
           {comments.map((v) => {
             return (
-              <Comment key={v.id} postId={postId} comment={v} />
+              <Comment key={`commentId/${v.id}`} postId={postId} comment={v} />
             )})
           }
         </S.CommentListMainContainer>
