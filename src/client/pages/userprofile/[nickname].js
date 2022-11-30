@@ -47,7 +47,7 @@ const UserProfile = () => {
         {userInformation 
           ? <>
               <Profile isSelectedUserPosts={isSelectedUserPosts} selectPosts={setIsSelectedUserPosts} />
-              <ProfilePosts key='profilePosts' isSelectedUserPosts={isSelectedUserPosts} pathVariable={nickname} />
+              <ProfilePosts isSelectedUserPosts={isSelectedUserPosts} pathVariable={nickname} />
             </>
 
           : <PageResultNotFound guide={'앗! 찾으시는 사용자가 없습니다.'} />
