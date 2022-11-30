@@ -58,7 +58,7 @@ const ProfileAvatar = ({ isTotalUpdating }) => {
             </S.AvatarWrapper>
             {isTotalUpdating && userInformation.id === myId &&
               <S.Actions>
-                <input type="file" accept="image/*" hidden key={inputRerender} ref={uploadRef} onChange={chnageProfilePicture} />
+                <input type='file' accept='image/*' hidden key={inputRerender} ref={uploadRef} onChange={chnageProfilePicture} />
                 <div className='change'>
                   <button type='button' aria-label='profilePictureChangeButton' onClick={inputClick}>
                     <img src='/profile_info_change_button.svg' alt='profile_info_change_button.svg' />
@@ -79,7 +79,7 @@ const ProfileAvatar = ({ isTotalUpdating }) => {
             </S.DefaultAvatarWrapper>
             {isTotalUpdating && userInformation.id === myId &&
               <S.Actions>
-                <input type="file" accept="image/*" hidden key={inputRerender} ref={uploadRef} onChange={chnageProfilePicture} />
+                <input type='file' accept='image/*' hidden key={inputRerender} ref={uploadRef} onChange={chnageProfilePicture} />
                 <div className='change'>
                   <button type='button' aria-label='profilePictureUploadButton' onClick={inputClick}>
                     <img src='/profile_info_change_button.svg' alt='profile_info_change_button.svg' />
