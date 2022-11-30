@@ -78,7 +78,7 @@ const Home = () => {
         }
         {mainPosts.map((v) => {
           return (
-            <PostFrame key={v.id} post={v} />
+            <PostFrame key={`mainPosts/postId/${v.id}`} post={v} />
           )})
         }
         <Observer ref={setTarget} />
