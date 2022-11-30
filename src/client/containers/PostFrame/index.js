@@ -35,7 +35,7 @@ const PostFrame = memo(({ post }) => {
   const targetPostLiked = post.PostLikers?.find(v => v.id === myId);
   const hasImage = post.Images.length > 0;
   const utilMenuProps = {
-    parentComponentType: 'Post',
+    parentComponentType: 'post',
     postId: post.id,
     author: post.UserId,
     removeModalOn: removeModalOnOff,
