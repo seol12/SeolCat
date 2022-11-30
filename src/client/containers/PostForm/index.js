@@ -57,7 +57,7 @@ const PostForm = () => {
   return (
     <>
       <S.PostFormMainContainer>
-        <form type="hidden" encType='multipart/form-data' onSubmit={addPost}>
+        <form type='hidden' encType='multipart/form-data' onSubmit={addPost}>
           <S.Header />
           <S.Contents>
           <S.AvatarWrapper>
@@ -68,7 +68,7 @@ const PostForm = () => {
             <div className='line' />
             <S.Actions>
               <S.UploadContainer>
-                <input type="file" accept="image/*" key={inputRerender} multiple hidden ref={imageInput} onChange={uploadImage} />
+                <input type='file' accept='image/*' key={inputRerender} multiple hidden ref={imageInput} onChange={uploadImage} />
                 <img src='/image_upload_button.svg' onClick={inputClick} alt='image_upload_button.svg' />
               </S.UploadContainer>
               <div className='emptyBox' />
