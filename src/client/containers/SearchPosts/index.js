@@ -53,7 +53,7 @@ const SearchPosts = ({ keyword }) => {
         ? <>
             {searchPosts.map((v) => {
               return (
-                <PostFrame key={`searchPosts/${v.id}`} post={v} />
+                <PostFrame key={`searchPosts/postId/${v.id}`} post={v} />
               )})
             }
             <Observer ref={setTarget} />
