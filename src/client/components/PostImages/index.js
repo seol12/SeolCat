@@ -41,7 +41,7 @@ const PostImages = ({ images }) => {
             </S.SkeletonImage>
           }
           <S.PostImage isImageLoading={isImageLoading}>
-            <Image layout='fill' src={images[0].src} alt={images[0].src} 
+            <Image layout='fill' key={`imageId/${images[0].id}/imageIndex/${0}/isImageLoading/${isImageLoading}`} src={images[0].src} alt={images[0].src} 
               onLoadingComplete={() => {setImageLoading(false)}}
             />
           </S.PostImage>
