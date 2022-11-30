@@ -84,7 +84,7 @@ const PostForm = () => {
             <S.PreviewImagesContainer>
               {addPostImageList.map((v, i) => {
                 return (
-                  <S.PreviewImage key={v}>
+                  <S.PreviewImage key={`addPostImageSrc/${v}`}>
                     <img src={v} alt={v} />
                     <div className='removeButtonWrapper'>
                       <button type='button' aria-label={`removeImageButton/${i}`} onClick={removePreviewImage(i)}>X</button>
