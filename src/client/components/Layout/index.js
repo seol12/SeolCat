@@ -85,7 +85,7 @@ const Layout = ({ children }) => {
       window.scrollTo({
         top: 0, 
         left: 0, 
-        behavior: "smooth"
+        behavior: 'smooth'
       });
     }
     searchOnOff();
@@ -143,7 +143,7 @@ const Layout = ({ children }) => {
         </S.MiddleContents>
         <S.RightContents>
         </S.RightContents>
-        <S.ScrollTopButton aria-label='scrollTopButton' onClick={() => {window.scrollTo({top: 0, left: 0, behavior: "smooth"})}} showUp={scrollButton}>
+        <S.ScrollTopButton aria-label='scrollTopButton' onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}} showUp={scrollButton}>
           <img src='/layout_move_scroll_top_button.svg' alt='layout_move_scroll_top_button.svg' />
         </S.ScrollTopButton>
       </S.LayoutContentsContainer>
