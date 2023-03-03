@@ -23,7 +23,7 @@ const Home = () => {
     description: '지금 무슨 생각을 하고 계신가요? 오늘의 하루를 설캣에서 공유해 보세요!',
     ogTitle: '설캣',
     ogDescription: '지금 무슨 생각을 하고 계신가요? 오늘의 하루를 설캣에서 공유해 보세요!',
-    ogUrl: 'http://www.seolcat.com',
+    ogUrl: 'http://www.seolecat.com',
     ogImage: null,
   };
 
