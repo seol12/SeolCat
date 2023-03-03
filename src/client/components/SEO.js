@@ -15,7 +15,7 @@ const SEO = ({ title, description, ogTitle, ogDescription, ogUrl, ogImage }) => 
         <meta property="og:title" key="ogTitle" content={`${ogTitle}`} />
         <meta property="og:description" key="ogDescription" content={`${ogDescription}`} />
         <meta property="og:url" key="ogUrl" content={`${ogUrl}`} />
-        <meta property="og:image" key="ogImage" content={`${ogImage || 'http://www.seolcat.com/default_og_image.png'}`} />
+        <meta property="og:image" key="ogImage" content={`${ogImage || 'http://www.seolecat.com/default_og_image.png'}`} />
       </Head>
     </>
   );
