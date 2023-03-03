@@ -24,7 +24,7 @@ const Signup = () => {
     description: '설캣에 회원가입 또는 로그인을 하여 오늘의 하루를 공유해 보세요!',
     ogTitle: '회원가입 - 설캣',
     ogDescription: '설캣에 회원가입 또는 로그인을 하여 오늘의 하루를 공유해 보세요!',
-    ogUrl: 'http://www.seolcat.com',
+    ogUrl: 'http://www.seolecat.com',
     ogImage: null,
   };
 
