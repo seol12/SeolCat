@@ -5,7 +5,7 @@ import postSaga from './postSaga';
 import commentSaga from './commentSaga';
 
 
-axios.defaults.baseURL = 'http://seolcat.com:1029/api';
+axios.defaults.baseURL = 'http://seolecat.com:1029/api';
 
 
 export default function* rootSaga() {
