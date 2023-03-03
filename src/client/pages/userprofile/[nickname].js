@@ -24,7 +24,7 @@ const UserProfile = () => {
     description: userInformation ? `${userInformation?.nickname} 님이 작성한 게시글과 좋아하는 게시글을 구경해 보세요!` : '지금 무슨 생각을 하고 계신가요? 오늘의 하루를 설캣에서 공유해 보세요!',
     ogTitle: userInformation ? `${userInformation?.nickname} 님의 프로필 - 설캣`  : '설캣',
     ogDescription: userInformation ? `${userInformation?.nickname} 님이 작성한 게시글과 좋아하는 게시글을 구경해 보세요!` : '지금 무슨 생각을 하고 계신가요? 오늘의 하루를 설캣에서 공유해 보세요!',
-    ogUrl: `http://www.seolcat.com/userprofile/${nickname}`,
+    ogUrl: `http://www.seolecat.com/userprofile/${nickname}`,
     ogImage: userInformation?.profileBackground  ? userInformation.profileBackground : null,
   };
 
