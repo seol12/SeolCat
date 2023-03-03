@@ -60,7 +60,7 @@ const UtilMenu = forwardRef(({ parentComponentType, postId, author, removeModalO
                   <div className='iconWrapper'>
                     <img src='/util_menu_share_button.svg' alt='util_menu_share_button.svg' />
                   </div>
-                  <button aria-label='copyPostUrlButton' onClick={handleClick(copyPostUrl(`http://www.seolcat.com/post/${postId}`))}>
+                  <button aria-label='copyPostUrlButton' onClick={handleClick(copyPostUrl(`http://www.seolecat.com/post/${postId}`))}>
                     <p>공유</p>
                   </button>
                 </S.PostActionWrapper>
@@ -70,7 +70,7 @@ const UtilMenu = forwardRef(({ parentComponentType, postId, author, removeModalO
                 <div className='iconWrapper'>
                   <img src='/util_menu_share_button.svg' alt='util_menu_share_button.svg' />
                 </div>
-                <button aria-label='copyPostUrlButton' onClick={handleClick(copyPostUrl(`http://www.seolcat.com/post/${postId}`))}>
+                <button aria-label='copyPostUrlButton' onClick={handleClick(copyPostUrl(`http://www.seolecat.com/post/${postId}`))}>
                   <p>공유</p>
                 </button>
               </S.PostActionWrapper>    
