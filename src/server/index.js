@@ -27,7 +27,7 @@ if(productionEnvironment) {
   server.use(helmet());
   server.use(morgan('combined'));
   server.use(cors({
-    origin: ['http://seolcat.com','http://www.seolcat.com'],
+    origin: ['http://seolecat.com','http://www.seolecat.com'],
     credentials: true,
   }));
 }else {
@@ -48,7 +48,7 @@ server.use(expressSession({
   cookie: {
     httpOnly: true,
     secure: false, 
-    domain: productionEnvironment && '.seolcat.com',
+    domain: productionEnvironment && '.seolecat.com',
   },
   name: 'didhddl',
 }));
