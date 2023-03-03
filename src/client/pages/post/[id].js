@@ -22,7 +22,7 @@ const Post = () => {
     description: '지금 무슨 생각을 하고 계신가요? 오늘의 하루를 설캣에서 공유해 보세요!',
     ogTitle: userSinglePost?.[0] ? `${userSinglePost?.[0].User.nickname} 님의 게시글 - 설캣` : '설캣',
     ogDescription: '지금 무슨 생각을 하고 계신가요? 오늘의 하루를 설캣에서 공유해 보세요!',
-    ogUrl: `http://www.seolcat.com/post/${id}`,
+    ogUrl: `http://www.seolecat.com/post/${id}`,
     ogImage: userSinglePost?.[0] && userSinglePost[0].Images.length > 0 ? userSinglePost[0].Images[0].src : null,
   };
 
