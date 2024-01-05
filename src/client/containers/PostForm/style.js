@@ -175,7 +175,7 @@ export const PreviewImage = styled.div`
     margin: 4px 2px 0px 0px;
     padding: 0px;
     font-weight: bold;
-    font-size: 0.1rem;
+    font-size: 12px;
     color: #FFFFFF;
     cursor: pointer;
   };
