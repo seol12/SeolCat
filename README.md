@@ -316,5 +316,5 @@
     　   
 ## 배포사이트
 
-   ### **www.seolcat.com**
+   ### **www.seolecat.com**
    
